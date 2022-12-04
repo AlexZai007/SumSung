@@ -1,21 +1,12 @@
+import service.DemoService;
+
 public class Main {
     public static void main(String[] args) {
+        //инцилизируем демо университет
+        DemoService demoService = new DemoService();
+        demoService.demo();
 
-        Animals dog = new Animals(
-                "Тоби",
-                "Владислав",
-                "Собакен"
-        );
-
-        Animals dog_2 = new Animals(dog);
-
-
-        System.out.println(dog);
-        dog.ChangeName("Глеб");
-        System.out.println(dog);
-
-
-
-
+        //Посхалочка от гения
+        System.out.printf("Вам представлена demo программы 'Университет 2000', что бы получить полный доступ вам нужно прислать фотографию кота в банке нашему менеджеру. Спасибо, что используете только лучший софт. Ваш любимый DiaSOFT");
     }
 }
